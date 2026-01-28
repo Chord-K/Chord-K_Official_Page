@@ -1,4 +1,3 @@
-
 import { Release, UpcomingRelease, SocialLink } from './types';
 
 export const ARTIST_NAME = "Chord K";
@@ -17,20 +16,20 @@ Years of experimentation followed, forming a sound driven by mood and movement r
 export const UPCOMING_RELEASES: UpcomingRelease[] = [
   {
     id: 1,
-    title: "Play (Original Mix)",
+    title: "Waves of Love",
     artist: "Chord K",
-    label: "THE GRID Records",
-    releaseDate: "30th January 2026",
+    label: "Sounds of Meow",
+    releaseDate: "13th February 2026",
     status: 'Upcoming',
-    beatportUrl: "https://www.beatport.com/release/play/5793966"
+    beatportUrl: "#"
   },
   {
     id: 2,
-    title: "Venera Veyron - Waves of Love (Chord K Remix)",
+    title: "No Lover",
     artist: "Chord K",
-    label: "Sounds of Meow",
-    releaseDate: "Feb 2026",
-    status: 'In Progress',
+    label: "F.T.F.T. Records",
+    releaseDate: "22nd May 2026",
+    status: 'Upcoming',
     beatportUrl: "#"
   }
 ];

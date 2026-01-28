@@ -77,7 +77,7 @@ const Home: React.FC = () => {
         </div>
         
         <p className="text-lg md:text-2xl font-light tracking-[0.2em] text-white/60 mb-8 uppercase">
-          Melodic Techno Producer
+          Melodic Techno shaped in Oman
         </p>
         <p className="text-sm md:text-base italic text-white/40 max-w-lg mx-auto tracking-wide mb-12">
           "{TAGLINE}"
