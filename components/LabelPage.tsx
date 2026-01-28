@@ -7,11 +7,11 @@ const LabelPage: React.FC = () => {
     <section className="relative min-h-screen w-full flex flex-col items-center justify-start overflow-hidden">
       {/* Background Layer - Fixed for consistent sizing */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-[#050505] z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-[#050505] z-10"></div>
         <img
           src={ABOUT_CONTENT.imageUrl}
           alt="Background"
-          className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+          className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-zinc-800/20 rounded-full blur-[120px] animate-pulse delay-700"></div>

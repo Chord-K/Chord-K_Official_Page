@@ -10,7 +10,7 @@ export const ABOUT_CONTENT = {
 In 2009, electronic music redirected that path. Starting with DJ controllers and small electronic setups, his focus shifted from mixing tracks to understanding how they are built. This led him into music production, exploring FL Studio alongside close collaborator Saied.
 
 Years of experimentation followed, forming a sound driven by mood and movement rather than trends. With multiple releases signed to record labels, Chord K continues to develop music that lives between melody and darkness—designed for late-night systems and deep listening. His focus remains on progression, clarity, and establishing a distinct voice within the global Melodic Techno landscape.`,
-  imageUrl: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1920&auto=format&fit=crop"
+  imageUrl: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1920&auto=format&fit=crop"
 };
 
 export const UPCOMING_RELEASES: UpcomingRelease[] = [
