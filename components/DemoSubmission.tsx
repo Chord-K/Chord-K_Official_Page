@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { DEMO_EMAIL, ABOUT_CONTENT } from '../constants';
 
@@ -13,7 +12,20 @@ const DemoSubmission: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form data:', formData);
+    
+    // Construct the email components
+    const subject = encodeURIComponent(`New Demo Submission: ${formData.artistName}`);
+    const body = encodeURIComponent(
+      `Artist/Project Name: ${formData.artistName}\n` +
+      `Contact Email: ${formData.email}\n` +
+      `Demo Link: ${formData.demoLink}\n\n` +
+      `Message:\n${formData.message}`
+    );
+
+    // Trigger the email client
+    window.location.href = `mailto:${DEMO_EMAIL}?subject=${subject}&body=${body}`;
+
+    // Update local UI state
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
   };
@@ -54,8 +66,8 @@ const DemoSubmission: React.FC = () => {
 
         {submitted ? (
           <div className="bg-green-900/10 border border-green-500/20 p-12 text-center animate-fadeIn backdrop-blur-md">
-            <h3 className="text-xl font-heading mb-4 text-emerald-400">Submission Received</h3>
-            <p className="text-white/50 mb-6">Our A&R team will review your demo shortly. Thank you for your interest in THE GRID Records.</p>
+            <h3 className="text-xl font-heading mb-4 text-emerald-400">Submission Initiated</h3>
+            <p className="text-white/50 mb-6">If your email client didn't open automatically, please check your background windows or use the contact email below.</p>
             <button 
               onClick={() => setSubmitted(false)}
               className="text-xs tracking-widest uppercase border-b border-white"

@@ -97,4 +97,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const CONTACT_EMAIL = "chordkofficial@gmail.com";
-export const DEMO_EMAIL = "thegridofc@gmail.com";
+export const DEMO_EMAIL = "chordkofficial@gmail.com";
